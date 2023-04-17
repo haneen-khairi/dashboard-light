@@ -105,9 +105,8 @@
 
 /* Swiper */
 .swiper {
-  width: calc(100% - 5%);
+  width: 100%;
   height: calc(70vh - 4rem);
-  /* border: 2px solid blue; */
   border-radius: 10px;
 }
 .swiper .suggest {
@@ -128,6 +127,16 @@
   object-fit: cover;
   object-position: center;
 }
+/* .swiper-button-prev {
+  color: orange;
+  background-color: rgb(24, 24, 24);
+  padding: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+} */
 /* Swiper */
 
 /* Suggestions for you */
