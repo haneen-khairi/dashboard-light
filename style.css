@@ -600,6 +600,10 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
+.one a {
+  text-decoration: none;
+  color: #1c1f35;
+}
 .one li {
   padding: 5px 16px;
   font-weight: bold;
@@ -656,7 +660,7 @@
 }
 
 .filter .one a {
-  margin-left: 10px;
+  color: #ff844b;
 }
 .filter .social {
   display: flex;
@@ -862,3 +866,33 @@ input:-webkit-autofill:active {
   right: 0;
 }
 /* TEST */
+
+/* CHART */
+.chartFlex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ProuductChart {
+  width: 84%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.CustomerImpressionChart,
+.ProgressChart {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+}
+.CustomerImpressionChart {
+  width: 60%;
+}
+.ProgressChart {
+  width: 30%;
+}
+/* CHART */

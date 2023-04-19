@@ -28,6 +28,11 @@
         />
     <!-- Swiper Js -->
 
+        <!-- Chart Js -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels.js"></script>
+        <!-- Chart Js -->
+
 </head>
 
 
@@ -346,7 +351,7 @@
                             </div>
 
                             <div class="paragraph">
-                                <h3>Sun glassess</h3>
+                                <h3>Laptop</h3>
                                 <p>
                                 Buy sunglasses in January from the Alibaba website and
                                 sell them in June on Amazon
@@ -377,7 +382,7 @@
                             </div>
 
                             <div class="paragraph">
-                                <h3>Sun glassess</h3>
+                                <h3>Makeup</h3>
                                 <p>
                                 Buy sunglasses in January from the Alibaba website and
                                 sell them in June on Amazon
@@ -511,6 +516,26 @@
                     </section>
                 <!-- Swiper Js -->
 
+                            <!-- Customer Impression and Progress Chart -->
+            <div class="chartFlex">
+                <!-- Customer Impression -->
+                <div class="CustomerImpressionChart">
+                  <h2>Customer Impression</h2>
+                  <div class="chartBox">
+                    <canvas id="LineChart"></canvas>
+                  </div>
+                </div>
+                <!-- Customer Impression -->
+  
+                <!-- Progress Chart -->
+                <div class="ProgressChart" id="doughnut-chart">
+                  <h2>Progress</h2>
+                  <canvas id="ProductChart"></canvas>
+                </div>
+                <!-- Progress Chart -->
+              </div>
+              <!-- Customer Impression and Progress Chart -->
+
 
             </section>
         </div>
@@ -545,6 +570,11 @@
     <!-- end js links -->
 
 
+    <!-- Chart JS -->
+        <script src="./assets/Js/LineChart.js"></script>
+        <script src="./assets/Js/ProductChart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <!-- Chart JS -->
 
 </body>
 
