@@ -1,6 +1,10 @@
 @media screen and (max-width: 768px) {
-  .side-right-content {
+  .side-right-content,.side-right-content2 {
     display: none;
+  }
+  .heat-map-details { 
+    padding: 5px 5px; 
+
   }
   aside {
     width: 15%;

@@ -15,6 +15,10 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="stylesheet" href="./style.css" />
+    <!-- Chart Js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels.js"></script>
+    <!-- Chart Js -->
 
     <!-- end css links -->
     <!-- Title Icon   -->
@@ -275,16 +279,37 @@
                 </div>
                 <div class="overlay" id="overlay">
                     <div class="popup" id="popup">
-                        <div class="social-table d-flex-wrap-space">
-                            <div class="social-post ">
-                                <h5>Post Title</h5>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nemo dolorum
-                                    eligendi. Sed fugit, dicta eos quas sit molestiae consequatur sunt </p>
-                            </div>
-                            <h5>Noon store</h5>
-                            <h5>Facebook</h5>
-                            <h5>30023 <a id="openBtn"><i class="fa-solid fa-circle-plus"></i></a></h5>
-                        </div>
+                        <div class=""> 
+                            <h5>All Comments <span>| 250 total</span></h5>
+                          <div class="comment-posts">
+                            <div class="review-container">
+                                <div class="review">
+                                  <p class="review-text">"I am extremely satisfied with the web design services provided by XYZ Web Designs. The team was professional, and the website they created using HTML, CSS, and JavaScript was visually stunning and interactive."</p>
+                                  <p class="review-author">- John Doe</p>
+                                </div>
+                                <div class="review">
+                                  <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
+                                  <p class="review-author">- Jane Smith</p>
+                                </div>
+                                <div class="review">
+                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
+                                    <p class="review-author">- Jane Smith</p>
+                                  </div>
+                                  <div class="review">
+                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
+                                    <p class="review-author">- Jane Smith</p>
+                                  </div>
+                                  <div class="review">
+                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
+                                    <p class="review-author">- Jane Smith</p>
+                                  </div>
+                                  <div class="review">
+                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
+                                    <p class="review-author">- Jane Smith</p>
+                                  </div>
+                              </div>
+                          </div>
+                         </div>
                         <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                 </div>
@@ -340,6 +365,95 @@
                         </div>
                     </div>
                 </div>
+                <!-- charts  -->
+                <div class="chartFlex">
+                    <!-- Customer Impression -->
+                    <div class="CustomerImpressionChart">
+                        <h2>Customer Impression</h2>
+                        <div class="chartBox">
+                            <canvas id="LineChart"></canvas>
+                        </div>
+                    </div>
+                    <!-- Customer Impression -->
+
+                    <!-- Progress Chart -->
+                    <div class="ProgressChart" id="doughnut-chart">
+                        <h2>Progress</h2>
+                        <div class="d-flex-wrap">
+                            <canvas id="ProductChart"></canvas>
+                            <div class="charts-progress">
+                                <div class="first-chart d-flex-wrap">
+                                    <span>Positive</span>
+                                    <span class="chart-num">51%</span>
+                                </div>
+                                <div class="second-chart d-flex-wrap">
+                                    <span>Negative</span>
+                                    <span class="chart-num">49%</span>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Progress Chart -->
+                </div>
+                <!-- end charts -->
+                <!-- swiper cards -->
+                <div class="swiper-cards">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="cards-prop">
+                                    <h5>Sun glasses</h5>
+                                    <p>Buy sunglasses in January from the Alibaba website and sell them in June on
+                                        Amazon</p>
+                                    <a href="" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards-prop">
+                                    <h5>Sun glasses</h5>
+                                    <p>Buy sunglasses in January from the Alibaba website and sell them in June on
+                                        Amazon</p>
+                                    <a href="" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards-prop">
+                                    <h5>Sun glasses</h5>
+                                    <p>Buy sunglasses in January from the Alibaba website and sell them in June on
+                                        Amazon</p>
+                                    <a href="" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards-prop">
+                                    <h5>Sun glasses</h5>
+                                    <p>Buy sunglasses in January from the Alibaba website and sell them in June on
+                                        Amazon</p>
+                                    <a href="" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards-prop">
+                                    <h5>Sun glasses</h5>
+                                    <p>Buy sunglasses in January from the Alibaba website and sell them in June on
+                                        Amazon</p>
+                                    <a href="" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="cards-prop">
+                                    <h5>Sun glasses</h5>
+                                    <p>Buy sunglasses in January from the Alibaba website and sell them in June on
+                                        Amazon</p>
+                                    <a href="" class="btn-view-more">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end swiper cards -->
                 <!-- NIP CHART -->
                 <div class="nip mb-4 mt-4">
                     <h4>NIP Chart</h4>
@@ -348,43 +462,47 @@
                     </div>
                 </div>
                 <!-- NIP CHART -->
+                <!-- heat map -->
+                <div class="nip heat-map-section mb-4 mt-4">
+                    <h4>Heat Map</h4>
+                    <div class="world">
+                        <div class="heat-map">
+                            <h6>Best selling country</h6>
+                            <div class="heat-map-details">
+                                <span>Height</span>
+                                <span>Medium</span>
+                                <span>Low</span>
+                            </div>
+                        </div>
+                        <!-- include two buttons to control the selection -->
+                        <div class="controls">
+                        </div>
+                    </div>
+                </div>
+                <!-- end heat map -->
 
 
-               
 
             </section>
         </div>
         </div>
 
     </main>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <!-- Swiper JS -->
-
-    <script>
-        const swiperr = new Swiper(".swiper", {
-            speed: 600,
-            spaceBetween: -100,
-            slidesPerView: 3,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
     <!-- js links -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
-    <script src="assets/js/main.js"></script>
-    <!-- end js links -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src='https://unpkg.com/topojson@3.0.2/dist/topojson.min.js'></script>
+    <script src='https://unpkg.com/d3@5.9.7/dist/d3.min.js'></script>
 
+    <!-- Chart JS -->
+    <script src="./assets/Js/LineChart.js"></script>
+    <script src="./assets/Js/ProductChart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+    <!-- Chart JS -->
+
+    <script src="assets/js/main.js"></script>
 
 
 </body>

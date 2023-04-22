@@ -1,7 +1,7 @@
 //Prouduct Chart
 
 const dataProduct = {
-  labels: ["Positive", "Negative"],
+  // labels: ["Positive", "Negative"],
   datasets: [
     {
       label: "",
