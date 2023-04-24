@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="./style.css" />
     <!-- Chart Js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels.js"></script>
@@ -28,7 +25,10 @@
     <!-- Swiper Js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <!-- Swiper Js -->
-
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 
 
@@ -70,7 +70,7 @@
         </aside>
 
         <div class="main-content">
-            <section class="side-right-content">
+            <section class="side-right-content2">
                 <div class="box-set box1 d-flex-space ">
                     <div>
                         <h2>Apple laptop</h2>
@@ -112,7 +112,7 @@
                     <a href="" class="btn btn-more"> More</a>
                 </div>
             </section>
-            <section class="side-right-content2">
+            <section class="side-right-content">
                 <div class="box-set box1 d-flex-space ">
                     <div>
                         <h2>Apple laptop</h2>
@@ -208,9 +208,8 @@
                             <div class="col-lg-3">
                                 <div class="boxes box1">
                                     <h3><i class="fa-solid fa-chart-line"></i>Websites Number</h3>
-                                    <div class="d-flex-space">
+                                    <div class="text-center">
                                         <span>200$</span>
-                                        <span>400$</span>
                                     </div>
 
                                 </div>
@@ -218,9 +217,8 @@
                             <div class="col-lg-3">
                                 <div class="boxes box2">
                                     <h3><i class="fa-solid fa-arrow-trend-down"></i> Min Price</h3>
-                                    <div class="d-flex-space">
+                                    <div class="text-center">
                                         <span>200$</span>
-                                        <span>400$</span>
                                     </div>
 
                                 </div>
@@ -228,9 +226,8 @@
                             <div class="col-lg-3">
                                 <div class="boxes box3">
                                     <h3><i class="fa-solid fa-arrow-trend-up"></i>Max Price</h3>
-                                    <div class="d-flex-space">
+                                    <div class="text-center">
                                         <span>200$</span>
-                                        <span>400$</span>
                                     </div>
 
                                 </div>
@@ -238,9 +235,8 @@
                             <div class="col-lg-3">
                                 <div class="boxes box4">
                                     <h3><i class="fa-regular fa-circle-check"></i>Best Price</h3>
-                                    <div class="d-flex-space">
+                                    <div class="text-center">
                                         <span>200$</span>
-                                        <span>400$</span>
                                     </div>
 
                                 </div>
@@ -264,11 +260,12 @@
 
                                 </div>
                                 <div class="social-table d-flex-wrap-space">
-                                    <div class="social-post ">
+                                    <!-- <div class="social-post ">
                                         <h5>Post Title</h5>
                                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae nemo dolorum
                                             eligendi. Sed fugit, dicta eos quas sit molestiae consequatur sunt </p>
-                                    </div>
+                                    </div> -->
+                                    <h5>description Lorem ipsum dolor sit ...</h5>
                                     <h5>Noon store</h5>
                                     <h5>Facebook</h5>
                                     <h5>30023 <a id="openBtn"><i class="fa-solid fa-circle-plus"></i></a></h5>
@@ -279,37 +276,64 @@
                 </div>
                 <div class="overlay" id="overlay">
                     <div class="popup" id="popup">
-                        <div class=""> 
+                        <div class="">
                             <h5>All Comments <span>| 250 total</span></h5>
-                          <div class="comment-posts">
-                            <div class="review-container">
-                                <div class="review">
-                                  <p class="review-text">"I am extremely satisfied with the web design services provided by XYZ Web Designs. The team was professional, and the website they created using HTML, CSS, and JavaScript was visually stunning and interactive."</p>
-                                  <p class="review-author">- John Doe</p>
+                            <div class="comment-posts">
+                                <div class="post-container">
+                                    <div class="post-header">
+                                      <h1 class="post-title">Post Title</h1>
+                                      <p class="post-date">April 24, 2023</p>
+                                    </div>
+                                    <div class="post-content">
+                                      <img src="assets/img/main-img.png" alt="Post Image" class="post-image">
+                                      <p class="post-description">This is a sample post description. It can be as long as needed and can contain rich content such 
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore ab perspiciatis maiores sit laborum cumque, sint eius autem? Adipisci, blanditiis. Tempora placeat iste maxime culpa eum eaque consequuntur cupiditate illum.
+                                        as images, videos, and formatted text.</p>
+                                      <!-- <a href="#" class="post-link">Read More</a> -->
+                                    </div>
+                                  </div>
+                                <div class="review-container">
+                                    <h5>Comments</h5>
+                                    <div class="review">
+                                        <p class="review-text">"I am extremely satisfied with the web design services
+                                            provided by XYZ Web Designs. The team was professional, and the website they
+                                            created using HTML, CSS, and JavaScript was visually stunning and
+                                            interactive."</p>
+                                        <p class="review-author">- John Doe</p>
+                                    </div>
+                                    <div class="review">
+                                        <p class="review-text">"The customer service provided by XYZ Web Designs was
+                                            exceptional. They were responsive to my requirements and delivered a website
+                                            that exceeded my expectations in terms of design and functionality."</p>
+                                        <p class="review-author">- Jane Smith</p>
+                                    </div>
+                                    <div class="review">
+                                        <p class="review-text">"The customer service provided by XYZ Web Designs was
+                                            exceptional. They were responsive to my requirements and delivered a website
+                                            that exceeded my expectations in terms of design and functionality."</p>
+                                        <p class="review-author">- Jane Smith</p>
+                                    </div>
+                                    <div class="review">
+                                        <p class="review-text">"The customer service provided by XYZ Web Designs was
+                                            exceptional. They were responsive to my requirements and delivered a website
+                                            that exceeded my expectations in terms of design and functionality."</p>
+                                        <p class="review-author">- Jane Smith</p>
+                                    </div>
+                                    <div class="review">
+                                        <p class="review-text">"The customer service provided by XYZ Web Designs was
+                                            exceptional. They were responsive to my requirements and delivered a website
+                                            that exceeded my expectations in terms of design and functionality."</p>
+                                        <p class="review-author">- Jane Smith</p>
+                                    </div>
+                                    <div class="review">
+                                        <p class="review-text">"The customer service provided by XYZ Web Designs was
+                                            exceptional. They were responsive to my requirements and delivered a website
+                                            that exceeded my expectations in terms of design and functionality."</p>
+                                        <p class="review-author">- Jane Smith</p>
+                                    </div>
                                 </div>
-                                <div class="review">
-                                  <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
-                                  <p class="review-author">- Jane Smith</p>
-                                </div>
-                                <div class="review">
-                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
-                                    <p class="review-author">- Jane Smith</p>
-                                  </div>
-                                  <div class="review">
-                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
-                                    <p class="review-author">- Jane Smith</p>
-                                  </div>
-                                  <div class="review">
-                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
-                                    <p class="review-author">- Jane Smith</p>
-                                  </div>
-                                  <div class="review">
-                                    <p class="review-text">"The customer service provided by XYZ Web Designs was exceptional. They were responsive to my requirements and delivered a website that exceeded my expectations in terms of design and functionality."</p>
-                                    <p class="review-author">- Jane Smith</p>
-                                  </div>
-                              </div>
-                          </div>
-                         </div>
+                            </div>
+                        </div>
                         <button id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
                     </div>
                 </div>
@@ -325,7 +349,6 @@
                                     <h4>| User Name</h4>
                                     <h4>| Rate</h4>
                                     <h4>| Description</h4>
-                                    <h4>| Comments Num</h4>
                                     <h4>| Positive or Negative</h4>
                                     <h4>| Country</h4>
                                 </div>
@@ -333,7 +356,6 @@
                                     <h5>Noon store</h5>
                                     <h5 class="rate"> <i class="fa-solid fa-star"></i> 4.5</h5>
                                     <h5>description ...</h5>
-                                    <h5>30023 <a id="openBtn"><i class="fa-solid fa-circle-plus"></i></a></h5>
                                     <h5><i class="fa-regular fa-face-smile"></i></h5>
                                     <h5>Jordan</h5>
                                 </div>
@@ -341,7 +363,6 @@
                                     <h5>Noon store</h5>
                                     <h5 class="rate"> <i class="fa-solid fa-star"></i> 4.5</h5>
                                     <h5>description ...</h5>
-                                    <h5>30023 <a id="openBtn"><i class="fa-solid fa-circle-plus"></i></a></h5>
                                     <h5><i class="fa-regular fa-face-smile"></i></h5>
                                     <h5>Jordan</h5>
                                 </div>
@@ -349,7 +370,6 @@
                                     <h5>Noon store</h5>
                                     <h5 class="rate"> <i class="fa-solid fa-star"></i> 4.5</h5>
                                     <h5>description ...</h5>
-                                    <h5>30023 <a id="openBtn"><i class="fa-solid fa-circle-plus"></i></a></h5>
                                     <h5><i class="fa-regular fa-face-smile"></i></h5>
                                     <h5>Jordan</h5>
                                 </div>
@@ -357,7 +377,6 @@
                                     <h5>Noon store</h5>
                                     <h5 class="rate"> <i class="fa-solid fa-star"></i> 4.5</h5>
                                     <h5>description ...</h5>
-                                    <h5>30023 <a id="openBtn"><i class="fa-solid fa-circle-plus"></i></a></h5>
                                     <h5><i class="fa-regular fa-face-smile"></i></h5>
                                     <h5>Jordan</h5>
                                 </div>
@@ -379,21 +398,10 @@
                     <!-- Progress Chart -->
                     <div class="ProgressChart" id="doughnut-chart">
                         <h2>Progress</h2>
-                        <div class="d-flex-wrap">
-                            <canvas id="ProductChart"></canvas>
-                            <div class="charts-progress">
-                                <div class="first-chart d-flex-wrap">
-                                    <span>Positive</span>
-                                    <span class="chart-num">51%</span>
-                                </div>
-                                <div class="second-chart d-flex-wrap">
-                                    <span>Negative</span>
-                                    <span class="chart-num">49%</span>
-
-                                </div>
-
-                            </div>
+                        <div class="chart-container">
+                            <canvas id="real-time-chart"></canvas>
                         </div>
+
                     </div>
                     <!-- Progress Chart -->
                 </div>
@@ -503,8 +511,45 @@
     <!-- Chart JS -->
 
     <script src="assets/js/main.js"></script>
-
-
+ <script>
+    // Initialize the chart data and options
+var chartData = {
+    labels: [0,1,2,3,4,5,6,7,8,9,10,11,12,13], // Array to hold chart labels
+    datasets: [{
+      label: 'Real-time Data',
+      data: [1,12,2,13,12,2,9,4,2,6,7,9,3], // Array to hold chart data
+      backgroundColor: 'rgba(75, 192, 192, 0.2)', // Set chart background color
+      borderColor: 'rgba(75, 192, 192, 1)', // Set chart border color
+      borderWidth: 1 // Set chart border width
+    }]
+  };
+  
+  var chartOptions = {
+    responsive: true, // Enable responsiveness
+    maintainAspectRatio: false, // Disable aspect ratio maintenance
+    scales: {
+      y: {
+        beginAtZero: true // Start y-axis from zero
+      }
+    }
+  };
+  
+  // Create the chart using Chart.js
+  var ctx = document.getElementById('real-time-chart').getContext('2d');
+  var realTimeChart = new Chart(ctx, {
+    type: 'line',
+    data: chartData,
+    options: chartOptions
+  });
+  
+  // Update the chart data and redraw
+  function updateChart(label, data) {
+    realTimeChart.data.labels.push(label);
+    realTimeChart.data.datasets[0].data.push(data);
+    realTimeChart.update(); // Redraw the chart
+  }
+  
+ </script>
 </body>
 
 </html>
