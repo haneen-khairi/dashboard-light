@@ -47,7 +47,7 @@
     width: 35px;
     height: 35px;
   }
-  .search-bar {
+  header .search-bar {
     display: none;
   }
   .main-center-content {
@@ -92,6 +92,20 @@
   .charts-progress{
     display: none;
   }
+  .main-center-content2 .main-box {
+    padding: 30px 5px;
+}
+.search-bar [type="search"] {
+  width: 100%;
+  min-width: 100%;
+  font-size: 14px;
+}
+.btn-tab { 
+  padding: 5px;
+}
+.search-section { 
+  gap: 10px;
+}
 }
 
 @media screen and (max-width: 1280px) {
