@@ -51,27 +51,23 @@ document.getElementById('closeBtn').addEventListener('click', function() {
 
 // swiper cards
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3.5,
-    spaceBetween: 10,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  slidesPerView: 3.5,
+  spaceBetween: 10,
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 20,
     },
-    breakpoints: {
-      640: {
-        slidesPerView: 1.5,
-        spaceBetween: 20,
-      },
-      768: {
-        slidesPerView: 2.5,
-        spaceBetween: 40,
-      },
-      1024: {
-        slidesPerView: 3.5,
-        spaceBetween: 50,
-      },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 40,
     },
-  });
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 50,
+    },
+  },
+});
 // heat map
 
 // json file providing a geometry for each country, differentiated by numerical ID
