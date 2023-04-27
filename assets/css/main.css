@@ -305,8 +305,8 @@ header nav {
 
 .cards .boxes span {
     color: #fff;
-    font-size: 16px;
-    /* opacity: 0.7; */
+    font-size: 22px;
+    font-weight: 900;
 }
 
 .cards .boxes h3 i {
@@ -338,7 +338,7 @@ header nav {
 }
 
 .cards h3 {
-    font-size: 14px;
+    font-size: 16px;
     padding-bottom: 1rem;
     color: #fff;
 }
@@ -581,6 +581,7 @@ header nav {
 
 .nipChart img {
     width: 100%;
+    max-width:1000px;
 }
 
 .rate i {
@@ -804,22 +805,34 @@ path.country.stage3 {
 
 .chartFlex {
     display: grid;
-    grid-template-columns: 50% 45%;
+    grid-template-columns: 100%;
     grid-gap: 2rem;
 
 }
-
+.d-flex-wrap-justify{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1rem
+}
+.date-chart div label{
+    font-size: 12px;
+}
+.date-chart div input{
+    width: 20px;
+}
 .CustomerImpressionChart {
     background-color: #fff;
     border-radius: 10px;
-    height: 300px;
+    height: 100%;
     padding: 25px;
 }
 
 .ProgressChart {
     background-color: #fff;
     border-radius: 10px;
-    height: 300px;
+    height: 100%;
     padding: 25px;
 }
 
@@ -979,4 +992,22 @@ path.country.stage3 {
   .post-link:hover {
     text-decoration: underline;
   }
-  
+  #myChart{
+    width: 1000px !important;
+    max-width: 125% !important;
+    height: 400px !important;
+    margin-left: -10%;
+  }
+ 
+  .d-flex-justify{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .btn-download{
+    background-color: #ff6d2b;
+    color: #fff;
+    box-shadow: 1px 1px 5px #d3d3d3;
+  }
