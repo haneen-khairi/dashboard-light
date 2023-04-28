@@ -94,4 +94,4 @@ fetch('/api/reviews')
   .catch(error => {
     console.error('Error fetching reviews:', error);
   });
-// real time series chart 
+// end real time series chart 

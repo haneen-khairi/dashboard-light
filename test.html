@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #price-table tbody tr {
+        display: none;
+      }
+      
+      #price-table tbody tr.show {
+        display: table-row;
+      }
+      
+      
+</style>
+<body>
+    <div>
+        <label for="price-filter">Price:</label>
+        <select id="price-filter">
+          <option value="0">All</option>
+          <option value="1">Less than $50</option>
+          <option value="2">$50 - $100</option>
+          <option value="3">$100 - $200</option>
+          <option value="4">$200 or more</option>
+        </select>
+      </div>
+      <table id="price-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Product 1</td>
+            <td>$25</td>
+          </tr>
+          <tr>
+            <td>Product 2</td>
+            <td>$75</td>
+          </tr>
+          <tr>
+            <td>Product 3</td>
+            <td>$150</td>
+          </tr>
+          <tr>
+            <td>Product 4</td>
+            <td>$250</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+    <script>
+        const select = document.getElementById('price-filter');
+        const rows = document.querySelectorAll('#price-table tbody tr');
+        
+        select.addEventListener('change', () => {
+          const filter = select.value;
+          
+          rows.forEach(row => {
+            const price = parseFloat(row.children[1].textContent.substring(1));
+            
+            if (filter === '0') {
+              row.classList.add('show');
+            } else if (filter === '1' && price < 50) {
+              row.classList.add('show');
+            } else if (filter === '2' && price >= 50 && price <= 100) {
+              row.classList.add('show');
+            } else if (filter === '3' && price >= 100 && price <= 200) {
+              row.classList.add('show');
+            } else if (filter === '4' && price >= 200) {
+              row.classList.add('show');
+            } else {
+              row.classList.remove('show');
+            }
+          });
+        });
+        
+
+    </script>
+</body>
+
+</html>

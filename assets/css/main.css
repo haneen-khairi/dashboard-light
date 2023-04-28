@@ -1011,3 +1011,116 @@ path.country.stage3 {
     color: #fff;
     box-shadow: 1px 1px 5px #d3d3d3;
   }
+  .filter-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* box-shadow:  1px 1px 5px rgb(255, 255, 255); */
+
+}
+
+.icon-button:hover {
+  background-color: #ddd;
+}
+
+.icon-button.active {
+    background-color: #fffefe;
+  box-shadow: 1px 1px 5px #fff;
+
+}
+
+.filter-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-item {
+    /* border-bottom: 1px solid #ccc; */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+.fa-utensils:before {
+  content: "\f2e7";
+}
+
+.fa-coffee:before {
+  content: "\f0f4";
+}
+.filter-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-button {
+  background-color: #f2f2f2;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 1px 1px 5px #fff;
+  /* box-shadow: inset 1px 1px 5px grey; */
+
+}
+
+.icon-button:hover {
+  background-color: #ddd;
+}
+
+ 
+.filter-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-item {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+  margin: 10px;
+}
+
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+.fa-utensils:before {
+  content: "\f2e7";
+}
+
+.fa-coffee:before {
+  content: "\f0f4";
+}
+.data-span{
+    margin:4px auto;
+}
+.data-span ul {
+    padding-left: 0rem;
+}
+.data-span ul li {
+    font-size: 10px;
+    padding-right: 30px;
+    display: inline-flex;
+    color: grey;
+}
+.search-href a{
+    font-size: 14px;
+    margin: 4px 0px;
+}
