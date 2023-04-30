@@ -95,3 +95,11 @@ fetch('/api/reviews')
     console.error('Error fetching reviews:', error);
   });
 // end real time series chart 
+
+//filter & search
+var options = {valueNames: [ 'title', 'date', 'views']},
+    userList = new List('users', options);
+    const toggleActiveClass = () => {
+      const button = document.getElementsByClassName("btn-downloads");
+      button.classList.toggle("active");
+    }
